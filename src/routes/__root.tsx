@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import premiumCss from "../premium.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -50,7 +51,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Método Entrega Perfeita | Limpeza Pós-Obra Profissional" },
       { name: "description", content: "Aprenda o Método Entrega Perfeita: uma metodologia prática em 7 etapas para realizar limpeza pós-obra com mais segurança, organização e profissionalismo." },
-      { name: "keywords", content: "limpeza pós-obra, limpeza pós reforma, curso limpeza pós-obra, profissional de limpeza, renda com limpeza" },
+      { name: "keywords", content: "limpeza pós-obra, limpeza pós reforma, curso limpeza pós-obra, profissional de limpeza, renda com limpeza, engenharia, arquitetura" },
       { name: "author", content: "Método Entrega Perfeita" },
       { property: "og:title", content: "Método Entrega Perfeita | Limpeza Pós-Obra Profissional" },
       { property: "og:description", content: "Uma metodologia prática em 7 etapas para transformar a limpeza pós-obra em um serviço mais organizado e profissional." },
@@ -59,6 +60,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "stylesheet", href: premiumCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
