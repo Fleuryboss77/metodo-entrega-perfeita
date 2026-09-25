@@ -2,7 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, BadgeCheck, BookOpen, Check, ChevronDown, ClipboardCheck, CreditCard, Hammer, Menu, PackageCheck, ShieldCheck, Sparkles, Star, Target, X, Zap } from "lucide-react";
 
-export const Route = createFileRoute("/")({ component: Index });
+export const Route = createFileRoute("/")({
+ head: () => ({
+  meta: [
+   { title: "Método Entrega Perfeita | Limpeza Pós-Obra" },
+   { name: "description", content: "Aprenda um método prático em 7 etapas para realizar limpeza pós-obra com segurança, organização e profissionalismo." },
+   { property: "og:title", content: "Método Entrega Perfeita | Limpeza Pós-Obra" },
+   { property: "og:description", content: "Domine uma metodologia prática em 7 etapas para uma entrega pós-obra impecável." },
+   { property: "og:type", content: "website" },
+   { name: "twitter:card", content: "summary_large_image" },
+  ],
+ }),
+ component: Index,
+});
 const checkoutUrl = "https://ggcheckout.app/checkout/v2/pWYRATKyCR4BHBbr6vJl";
 const images = {
   professional: "https://images.pexels.com/photos/6195110/pexels-photo-6195110.jpeg?auto=compress&cs=tinysrgb&w=1400",
