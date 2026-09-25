@@ -21,7 +21,7 @@
 .bonus-icon{background:#f7eded!important;color:#a93d3d!important;border:1px solid #ead4d4}
 .bonus-top>span{color:#a93d3d!important}
 .bonus-included{color:#66716c}.bonus-included svg{color:#a93d3d!important}
-.offer-section{padding-top:80px;padding-bottom:110px}.offer-wrap{border-radius:30px;padding:68px;box-shadow:0 34px 80px rgba(24,35,31,.2)}.price-card{border-radius:22px}.price{font-size:72px}
+.offer-section{padding-top:80px;padding-bottom:110px}.offer-wrap{border-radius:30px;padding:68px;box-shadow:0 34px 80px rgba(24,35,31,.2)}.offer-glow{position:absolute;inset:0;pointer-events:none}.price-card{border-radius:22px}.price{font-size:72px}
 .faq-section{padding-top:105px;padding-bottom:105px}.faq{border-radius:16px}
 .site-footer{padding-top:60px}
 
